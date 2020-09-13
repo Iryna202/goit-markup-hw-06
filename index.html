@@ -66,27 +66,42 @@
           </h1>
           <button class="modal-btn" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
+            
             <div class="modal">
-              <button class="modal-btn-closed" data-modal-close>закрыть</button>
+              <button class="modal-btn-closed" data-modal-close></button>
               <b class="modal-invite">Оставьте свои данные, мы вам перезвоним</b>
-              <form class="">
-               <label for="name">Имя</label>
-                <input type="text"
-                       name="name" 
-                       id="name"
-                >
-               <label for="">Телефон</label>
-                <input type="text"
-                name="name" 
-                id="name"
-               >
-               <label for="">Почта</label>
-                <input type="text"
-                name="name" 
-                id="name"
-               >
+              
+              <form class="form">
+               <div class="form-field">
+                  <label for="name">Имя</label>
+                  <input type="text"
+                         name="name"  
+                         id="name">
+      
+              
+                  <label for="tel">Телефон</label>
+                  <input type="tel"
+                         name="telephone" 
+                         id="tel">
+               
+              
+                  <label for="email">Почта</label>
+                  <input type="text"
+                         name="email" 
+                         id="email">
+               
+              
+                  <label for="comment">Комментарий</label>
+                    <textarea class="comment" 
+                              name="comment" 
+                              id="comment" 
+                              placeholder="Введите текст">
+                    </textarea>
+               </div>
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
               </form>
-              <button class="">отправить</button>
+              <button type="submit" class="">Отправить</button>
             </div>
           </div>
         </div>
